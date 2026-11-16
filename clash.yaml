@@ -70,6 +70,13 @@ rule-providers:
     path: ./ruleset/shortdrama_adblock.yaml
 
 rules:
+  # 1. 先放正片白名单（防误杀）
+  - DOMAIN-SUFFIX,v-reading-video.qznovelvod.com,DIRECT
+  - DOMAIN-SUFFIX,qznovelvod.com,DIRECT
+  - DOMAIN-SUFFIX,fqnovel.com,DIRECT
+  - DOMAIN-SUFFIX,douyinvod.com,DIRECT
+  - DOMAIN-SUFFIX,idouyinvod.com,DIRECT
+  
   # 2. 广告规则集
   - RULE-SET,shortdrama_adblock,REJECT
 
