@@ -1,0 +1,77 @@
+# ==============================================================================
+# OpenClash 自定义 Sniffer + 虚假代理骨架（红果/抖音短剧去广）
+# 说明：proxies 里没有真实节点，只用 REJECT / DIRECT 内置动作
+# ==============================================================================
+
+proxies:
+  - name: FAKE
+    type: socks5
+    server: 127.0.0.1
+    port: 65535
+
+proxy-groups:
+  - name: AdBlock
+    type: select
+    proxies:
+      - REJECT
+      - DIRECT
+  - name: Final
+    type: select
+    proxies:
+      - DIRECT
+      - REJECT
+
+sniffer:
+  enable: true
+  force-dns-mapping: true
+  parse-pure-ip: true
+  override-destination: false
+  sniff:
+    QUIC:
+      ports:
+        - 443
+    TLS:
+      ports:
+        - 443
+        - 8443
+    HTTP:
+      ports:
+        - 80
+        - 8080-8880
+      override-destination: false
+  force-domain:
+    - "+.*"
+    - "+.zijieapi.com"
+    - "+.fqnovel.com"
+    - "+.snssdk.com"
+    - "+.qznovelvod.com"
+    - "+.douyin.com"
+    - "+.amemv.com"
+    - "+.douyinvod.com"
+    - "+.idouyinvod.com"
+    - "+.byteimg.com"
+    - "+.bytegecko.com"
+    - "+.ecombdapi.com"
+    - "+.ecombdimg.com"
+  skip-domain:
+    - "Mijia Cloud"
+    - "dlg.io.mi.com"
+    - "+.oray.com"
+    - "+.sunlogin.net"
+    - "+.push.apple.com"
+
+rule-providers:
+  shortdrama_adblock:
+    type: http
+    behavior: classical
+    format: yaml
+    interval: 86400
+    url: "https://raw.githubusercontent.com/nethao/openwrt-shortdrama-adblock/main/rules/shortdrama-adblock.yaml"
+    path: ./ruleset/shortdrama_adblock.yaml
+
+rules:
+  # 2. 广告规则集
+  - RULE-SET,shortdrama_adblock,REJECT
+
+  # 3. 兜底：直连（不引用真实代理）
+  - MATCH,Final
