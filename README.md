@@ -6,6 +6,12 @@
 源址订阅：
 > https://raw.githubusercontent.com/wukan1986/openwrt-shortdrama-adblock/main/clash.yaml
 
+## 注意
+1. 有极低的概率刷出广告。请手动刷开
+2. 有较低的概率刷出短剧卡住。停止Clash，回到短剧界面等能正常播放，再启动Clash
+
+---
+
 # OpenWrt / iStoreOS 旁路由短剧去广告终极方案 (红果短剧 & 抖音短剧)
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
