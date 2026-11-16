@@ -1,4 +1,4 @@
-# 直接订阅
+# 直接订阅1
 
 推荐订阅：
 > https://fastly.jsdelivr.net/gh/wukan1986/openwrt-shortdrama-adblock@main/clash.yaml
@@ -9,6 +9,16 @@
 ## 注意
 1. 有极低的概率刷出广告。请手动刷开
 2. 有较低的概率刷出短剧卡住。停止Clash，回到短剧界面等能正常播放，再启动Clash
+
+---
+
+# 直接订阅2
+
+推荐订阅：
+> https://fastly.jsdelivr.net/gh/Notte118/hongguo-clash-no-ad@main/hongguo-clash-verge-rev-profile.yaml
+
+源址订阅：
+> https://raw.githubusercontent.com/Notte118/hongguo-clash-no-ad/main/hongguo-clash-verge-rev-profile.yaml
 
 ---
 
