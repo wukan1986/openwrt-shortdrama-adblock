@@ -1,10 +1,10 @@
 # 直接订阅
 
 推荐订阅：
->> https://fastly.jsdelivr.net/gh/wukan1986/openwrt-shortdrama-adblock@main/clash.yaml
+> https://fastly.jsdelivr.net/gh/wukan1986/openwrt-shortdrama-adblock@main/clash.yaml
 
 源址订阅：
->> https://raw.githubusercontent.com/wukan1986/openwrt-shortdrama-adblock/main/clash.yaml
+> https://raw.githubusercontent.com/wukan1986/openwrt-shortdrama-adblock/main/clash.yaml
 
 # OpenWrt / iStoreOS 旁路由短剧去广告终极方案 (红果短剧 & 抖音短剧)
 
