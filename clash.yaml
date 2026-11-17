@@ -3,23 +3,8 @@
 # 说明：proxies 里没有真实节点，只用 REJECT / DIRECT 内置动作
 # ==============================================================================
 
-proxies:
-  - name: FAKE
-    type: socks5
-    server: 127.0.0.1
-    port: 65535
-
-proxy-groups:
-  - name: AdBlock
-    type: select
-    proxies:
-      - REJECT
-      - DIRECT
-  - name: Final
-    type: select
-    proxies:
-      - DIRECT
-      - REJECT
+proxies: []
+proxy-groups: []
 
 sniffer:
   enable: true
@@ -81,4 +66,4 @@ rules:
   - RULE-SET,shortdrama_adblock,REJECT
 
   # 3. 兜底：直连（不引用真实代理）
-  - MATCH,Final
+  - MATCH,DIRECT
