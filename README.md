@@ -20,6 +20,9 @@
 源址订阅：
 > https://raw.githubusercontent.com/Notte118/hongguo-clash-no-ad/main/hongguo-clash-verge-rev-profile.yaml
 
+## 注意
+1. 长时间播放后，开始多次出现广告。将红果和Clash都完全退出，然后重新开这两软件即可。注意要先启用Clash再开红果
+
 ---
 
 # OpenWrt / iStoreOS 旁路由短剧去广告终极方案 (红果短剧 & 抖音短剧)
