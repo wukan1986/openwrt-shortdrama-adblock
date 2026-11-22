@@ -1,27 +1,14 @@
-# 直接订阅1
+# 直接订阅
 
-推荐订阅：
+免翻订阅：
 > https://fastly.jsdelivr.net/gh/wukan1986/openwrt-shortdrama-adblock@main/clash.yaml
 
-源址订阅：
+翻墙订阅：
 > https://raw.githubusercontent.com/wukan1986/openwrt-shortdrama-adblock/main/clash.yaml
 
 ## 注意
-1. 有极低的概率刷出广告。请手动刷开
-2. 有较低的概率刷出短剧卡住。停止Clash，回到短剧界面等能正常播放，再启动Clash
-
----
-
-# 直接订阅2
-
-推荐订阅：
-> https://fastly.jsdelivr.net/gh/Notte118/hongguo-clash-no-ad@main/hongguo-clash-verge-rev-profile.yaml
-
-源址订阅：
-> https://raw.githubusercontent.com/Notte118/hongguo-clash-no-ad/main/hongguo-clash-verge-rev-profile.yaml
-
-## 注意
-1. 长时间播放后，开始多次出现广告。将红果和Clash都完全退出，然后重新开这两软件即可。注意要先启用Clash再开红果
+1. 每次使用都是先`启用clash连接`再`开启红果`（先开红果会导致已经建立的连接不过clash）
+1. 第一次配置时，建议`重启手机`或`开启飞行模式`（之前红果产生的DNS缓存需要重置）
 
 ---
 
