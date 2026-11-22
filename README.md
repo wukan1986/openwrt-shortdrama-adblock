@@ -6,8 +6,8 @@
 翻墙订阅：
 > https://raw.githubusercontent.com/wukan1986/openwrt-shortdrama-adblock/main/clash.yaml
 
-## 注意
-1. 每次使用都是先`启用clash连接`再`开启红果`（先开红果会导致已经建立的连接不过clash）
+## 开机后最晚开红果可去广
+1. 每次使用都是先`clash连接`再`开启红果`（先开红果会导致已经建立的连接不过clash）
 1. 如果启动顺序搞混，先退出红果，再开启`飞行模式10秒`（之前红果产生的DNS缓存需要重置）
 
 ---
